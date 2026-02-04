@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.instlogo {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    z-index: 20;
+}
+.containter {
+    display: flex;
+    min-height: 90vh;
+    width: 100%;
+    color:#000;
+}
+
+.left-side {
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-side h1 {
+    font-size: 32px;
+    max-width: 500px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.right-side {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    border-left: 1px solid #333;
+}
+
+.right-side p {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.right-side input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+    border-radius: 7px;
+    color: white;
+    outline: none;
+}
+
+.form {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login {
+    background-color: lightskyblue;
+    color: #d6e5ef;
+}
+
+.facebook {
+    background: none;
+    color: #0095f6;
+    border: 1px solid lightgray;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.newuser {
+    background: none;
+    color: #0095f6;
+    border: 1px solid #0095f6;
+}
+
+.right-side a {
+    color:#000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+footer {
+    padding: 20px 40px 40px;
+    text-align: center;
+}
+
+footer p:first-child {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer a {
+    color: #a8a8a8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.fromMeta {
+    margin-top: 20px;
+    color: #a8a8a8;
+    font-size: 12px;
+}
