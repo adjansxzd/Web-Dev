@@ -1,0 +1,45 @@
+<div class="product-card">
+    <div class="product-image-wrapper">
+        <img [src]="product().image" [alt]="product().name" class="product-image">
+    </div>
+
+    <div class="product-details">
+        <h3 class="product-title">{{ product().name }}</h3>
+        <p class="product-description"> {{ product().description }} </p>
+
+        <div class="rating-container">
+            <div class="stars">
+                <span *ngFor="let star of getRatingStars(product().rating)" 
+                    class="star" 
+                    [class.filled]="star">★</span>
+            </div>
+        <span class="rating-number">{{ product().rating }}</span>
+        </div>
+
+        <div class="price-likes">
+            <span class="price"> {{ formatPrice(product().price) }}</span>
+            <span class="likes" (click)="OnLike()">❤ {{ product().likes }}</span> 
+        </div>
+
+        <div class="actions">
+            <a [href]="product().link" target="_blank" class="btn btn-primary">
+                🛒На Kaspi.kz
+            </a>
+
+            <div class="share-buttons">
+                <button (click)="shareViaWhatsApp(product())" class="btn btn-whatsapp">
+                    💬Whatsapp
+                </button>
+                <button (click)="shareViaTelegram(product())" class="btn btn-telegram">
+                    ✈Telegram
+                </button>
+            </div>
+            
+            <button (click)="OnDelete()" class="btn btn-delete">
+                🗑️Удалить
+            </button>
+        </div>
+    </div>    
+</div>
+    
+
